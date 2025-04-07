@@ -4,14 +4,10 @@ import { Upload } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
 import { PhotoGallery } from './PhotoGallery';
+import { Photo } from './types';
 
 interface PhotoUploadSectionProps {
-  photos: Array<{
-    file: File;
-    name: string;
-    note: string;
-    url: string;
-  }>;
+  photos: Photo[];
   uploadProgress: number;
   uploadingStatus: boolean;
   MAX_PHOTOS: number;

@@ -7,14 +7,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Textarea } from '@/components/ui/textarea';
 import BlurImage from '@/components/BlurImage';
 import { toast } from "sonner";
+import { Photo } from './types';
 
 interface PhotoGalleryProps {
-  photos: Array<{
-    file: File;
-    name: string;
-    note: string;
-    url: string;
-  }>;
+  photos: Photo[];
   MAX_PHOTOS: number;
   removePhoto: (index: number) => void;
   addNoteToPhoto: (index: number, note: string) => void;
