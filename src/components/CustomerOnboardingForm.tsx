@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { CloudLightning } from 'lucide-react';
 import { toast } from "sonner";
-import { PhotoUploadSection } from './PhotoReport/PhotoUploadSection';
+import PhotoUploadSection from './PhotoReport/PhotoUploadSection';
 import ProjectDetails from './OnboardingForm/ProjectDetails';
 import ReportOptions from './OnboardingForm/ReportOptions';
 

@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
 import { PlusCircle, Filter, SortDesc } from "lucide-react";
@@ -9,6 +9,10 @@ import ReportsPagination from "./components/ReportsPagination";
 import { mockReports } from "./data/mockReports";
 
 const ReportsPage = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 10;
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <NavBar />
@@ -44,14 +48,17 @@ const ReportsPage = () => {
             </div>
           </div>
           
-          <ReportsSearch />
+          <ReportsSearch 
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+          />
           
           <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
             <ReportsTable reports={mockReports} />
             <ReportsPagination 
-              currentPage={1} 
-              totalPages={10} 
-              onPageChange={(page) => console.log(`Changing to page ${page}`)} 
+              currentPage={currentPage} 
+              totalPages={totalPages} 
+              setCurrentPage={setCurrentPage} 
             />
           </div>
         </div>
