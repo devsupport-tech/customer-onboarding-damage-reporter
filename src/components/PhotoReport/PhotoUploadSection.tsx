@@ -3,7 +3,7 @@ import React from 'react';
 import { Upload } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
-import { PhotoGallery } from './PhotoGallery';
+import PhotoGallery from './PhotoGallery';
 import { Photo } from './types';
 
 interface PhotoUploadSectionProps {

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { CloudLightning } from 'lucide-react';
 import { toast } from "sonner";
 import { Photo, ProjectDetails } from './PhotoReport/types';
-import ProjectDetailsForm from './PhotoReport/ProjectDetailsForm';
+import ProjectDetails from './OnboardingForm/ProjectDetails';
 import PhotoUploadSection from './PhotoReport/PhotoUploadSection';
 import ReportGenerationSection from './PhotoReport/ReportGenerationSection';
 
@@ -122,7 +122,7 @@ const PhotoReportApp = () => {
           <h1 className="text-3xl font-semibold tracking-tight">Damage Customer Onboarding</h1>
         </div>
         
-        <ProjectDetailsForm 
+        <ProjectDetails 
           projectDetails={projectDetails}
           handleProjectDetailsChange={handleProjectDetailsChange}
           handleSelectChange={handleSelectChange}
