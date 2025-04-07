@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Cloud, CloudLightning, LayoutDashboard, History, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
+import DarkModeToggle from "./DarkModeToggle";
 
 const NavBar = () => {
   return (
@@ -29,6 +30,7 @@ const NavBar = () => {
           <NavLink to="/settings" icon={<Settings className="w-4 h-4" />}>
             Settings
           </NavLink>
+          <DarkModeToggle />
         </nav>
       </div>
     </header>
