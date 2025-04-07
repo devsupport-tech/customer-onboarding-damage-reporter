@@ -13,7 +13,7 @@ const NavBar = () => {
           className="flex items-center space-x-2 transition-transform duration-300 hover:scale-[1.02]"
         >
           <CloudLightning className="h-7 w-7 text-primary" />
-          <span className="text-xl font-medium">Storm Reporter</span>
+          <span className="text-xl font-medium">Customer Onboarding & Damage Report</span>
         </Link>
         
         <nav className="ml-auto flex items-center space-x-1">
