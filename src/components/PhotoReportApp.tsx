@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { CloudLightning } from 'lucide-react';
 import { toast } from "sonner";
-import { Photo, ProjectDetails } from './PhotoReport/types';
+import { Photo, ProjectDetails as ProjectDetailsType } from './PhotoReport/types';
 import ProjectDetails from './OnboardingForm/ProjectDetails';
 import PhotoUploadSection from './PhotoReport/PhotoUploadSection';
 import ReportGenerationSection from './PhotoReport/ReportGenerationSection';
@@ -15,7 +14,7 @@ const PhotoReportApp = () => {
   const [message, setMessage] = useState('');
   const [uploadProgress, setUploadProgress] = useState(0);
   const [uploadingStatus, setUploadingStatus] = useState(false);
-  const [projectDetails, setProjectDetails] = useState<ProjectDetails>({
+  const [projectDetails, setProjectDetails] = useState<ProjectDetailsType>({
     clientName: '',
     address: '',
     dateOfIncident: '',
