@@ -10,6 +10,8 @@ import Reports from "./pages/Reports";
 import History from "./pages/History";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import Chatbot from "@/components/Chatbot";
+
 
 const queryClient = new QueryClient();
 
